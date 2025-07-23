@@ -1,0 +1,111 @@
+/* Retro Americana 60s Vibe CSS */
+
+/* Color Palette */
+:root {
+  --retro-red: #d72631;
+  --retro-white: #f4f4f4;
+  --retro-blue: #1b4d7a;
+  --retro-dark-blue: #0b2e4d;
+  --retro-pink: #f7c6c7;
+}
+
+/* Polka Dot Background Pattern */
+.polka-dot-bg {
+  background-color: var(--retro-white);
+  background-image: radial-gradient(var(--retro-red) 10%, transparent 11%);
+  background-size: 30px 30px;
+  position: relative;
+}
+
+/* Feminine Typography */
+.retro-font {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 700;
+  color: var(--retro-red);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 var(--retro-dark-blue);
+}
+
+/* Eerie Shadow Overlay */
+.eerie-shadow {
+  position: relative;
+  z-index: 1;
+}
+
+.eerie-shadow::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(27, 77, 122, 0.3);
+  box-shadow: inset 0 0 20px 5px rgba(215, 38, 49, 0.6);
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(4px);
+  border-radius: 8px;
+}
+
+/* Buttons with Retro Style */
+.retro-button {
+  background-color: var(--retro-blue);
+  color: var(--retro-white);
+  border: 2px solid var(--retro-red);
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(215, 38, 49, 0.5);
+}
+
+.retro-button:hover {
+  background-color: var(--retro-red);
+  color: var(--retro-white);
+  box-shadow: 0 6px 10px rgba(27, 77, 122, 0.7);
+}
+
+/* Headers with Polka Dot Accent */
+.header-polka {
+  position: relative;
+  padding: 10px 20px;
+  background-color: var(--retro-white);
+  color: var(--retro-dark-blue);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.header-polka::before {
+  content: "";
+  position: absolute;
+  top: 5px; left: 5px; right: 5px; bottom: 5px;
+  background-image: radial-gradient(var(--retro-pink) 10%, transparent 11%);
+  background-size: 15px 15px;
+  opacity: 0.3;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+/* Text with subtle eerie animation */
+.eerie-text {
+  color: var(--retro-red);
+  animation: flicker 3s infinite alternate;
+  text-shadow:
+    0 0 5px var(--retro-red),
+    0 0 10px var(--retro-red),
+    0 0 20px var(--retro-red);
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}

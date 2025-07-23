@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sky Thompson's Portfolio</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/retro-americana-fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div id="canvas-container"></div>
+        <h1 class="loading-text">LOADING...</h1>
+    </div>
+    <div id="main-content" style="display: none;">
+        <div class="repeat-background">sky's portfolio</div>
+        
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>SKY THOMPSON</h1>
+                    <p>Creative FullStack Developer<br>International, Based in New York</p>
+                </div>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <div class="hero-content">
+                <div class="text-with-links">
+                    <div class="isometric-text" id="isometric-the">THE</div>
+                    <ul class="hero-links">
+                        <li><a href="#about"> about</a></li>
+                    </ul>
+                </div>
+                <div class="text-with-links">
+                    <div class="isometric-text" id="isometric-work">WORK STUFF</div>
+                    <ul class="hero-links">
+                        <li><a href="#projects"> pojects for a purpose</a></li>
+                    </ul>
+                </div>
+                <div class="text-with-links">
+                    <div class="isometric-text" id="isometric-stuff">STUFF</div>
+                    <ul class="hero-links">
+                        <li><a href="#3dprojects"> 3d</a></li>
+                    </ul>
+                </div>
+                <div class="text-with-links">
+                    <div class="isometric-text" id="isometric-below">IS BELOW</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="filter-buttons">
+                <button onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('web')">Web</button>
+                <button onclick="filterProjects('mobile')">Mobile</button>
+            </div>
+            <div class="project-grid" id="projectGrid">
+                <div class="live-preview-container">
+                    <h3>Play Me</h3>
+                    <iframe src="https://skysthompson.github.io/skyhangman/" title="Website Preview" width="100%" height="500px"></iframe>
+                </div>
+                <div class="project-card" data-category="web">
+                    <h3>Internship Website for MaxxPotential</h3>
+                    <video class="project-video" autoplay loop muted playsinline>
+                        <source src="ezgif.com-video-to-gif-converter.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>
+                        Led the development of Maxx Potential’s main website, 
+                        implementing a full-stack user authentication system with MongoDB, 
+                        secure login/registration, and 2FA via Google Console’s API. Designed a user-friendly front end with JavaScript, HTML, CSS, and Node.js, ensuring seamless database connectivity and authentication. Leveraged PM2 for process management, Ngrok for secure tunneling, and Git/GitHub for version control while collaborating in an agile environment to optimize performance and troubleshoot issues.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pdf-section">
+            <h2>Sky's Resume (2025)</h2>
+            <iframe src="/static/portfolio.pdf" width="100%" height="600px" title="Portfolio PDF"></iframe>
+        </section>
+
+        <section>
+            <ul class="code">
+              <li tabindex="0" class="digit">
+                <span>0</span>
+              </li>
+              <li tabindex="0" class="digit">
+                <span>3</span>
+              </li>
+              <li tabindex="0" class="digit">
+                <span>4</span>
+              </li>
+              <li tabindex="0" class="digit">
+                <span>8</span>
+              </li>
+              <li tabindex="0" class="digit">
+                <span>7</span>
+              </li>
+              <li tabindex="0" class="digit">
+                <span>2</span>
+              </li>
+            </ul>
+        </section>
+
+        <section id="timeline">
+            <h2>Professional Journey</h2>
+            <ul class="social-links">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span> - Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span> - Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        <span> - Google</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span> - Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <footer id="contact">
+            <h2>Let's Talk More</h2>
+            <div class="footer-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <textarea id="message" placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="footer-links">
+                    <p class="footer-email">skysabrinathompson@gmail.com</p>
+                    <ul class="social-links">
+                        <ul><a href="https://linkedin.com/in/skythompson100" target="_blank">LinkedIn</a></ul>
+                        <ul><a href="https://skysabrina.tumblr.com" target="_blank">Instagram</a></ul>
+                        <ul><a href="https://github.com/SkySThompson" target="_blank">GitHub</a></ul>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.module.min.js",
+                "three/addons/": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/examples/jsm/"
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script type="module" src="/static/script.js"></script>
+</body>
+</html>

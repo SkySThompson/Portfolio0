@@ -1,0 +1,26 @@
+/* Font-face declarations for local fonts */
+
+@font-face {
+  font-family: 'American Captain';
+  src: url('/static/fonts/american-captain-font/AmericanCaptain-MdEY.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Remachine Script';
+  src: url('/static/fonts/remachine-script-font/RemachineScriptPersonalUseOnly-yZL3.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Example usage */
+.american-captain-font {
+  font-family: 'American Captain', serif;
+}
+
+.remachine-script-font {
+  font-family: 'Remachine Script', cursive;
+}
