@@ -1,13 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  background: #fff;
   background-image: 
     linear-gradient(rgb(240, 255, 153) 1px, transparent 1px),
     linear-gradient(90deg, rgb(153, 235, 255) 1px, transparent 1px),
@@ -101,8 +99,7 @@ header {
   width: 100%;
   padding: 1.5rem;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid #ff9999;
+  border-bottom: 1px solid #ff999900;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -158,7 +155,6 @@ main {
   align-items: start;
   justify-content: center;
   scroll-margin-top: 90px;
-  background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -193,12 +189,12 @@ h2 {
   transition: transform 0.2s ease, background 0.2s ease;
   font-size: 1rem;
   border-radius: 4px;
-  border: 1px solid #ff9999;
+  border: 1px solid #ff999900;
 }
 
 .filter-buttons button:hover {
   transform: scale(1.05);
-  background: #ff9999;
+  background: #ff999900;
   color: #fff;
 }
 
@@ -209,16 +205,27 @@ h2 {
 }
 
 .project-card {
-  background: rgb(255, 253, 253);
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
+  box-shadow: none;
+  border: none;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
+}
+
+
+.review-item {
+  background: #5c497100;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  position: relative;
+  box-shadow: none;
+  border: none;
 }
 
 .project-video {
@@ -359,7 +366,7 @@ ul {
   padding: 1.5rem;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
-  border: 2px solid #ff9999;
+  border: 2px solid #ff999900;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -380,17 +387,17 @@ ul {
 .contact input,
 .contact textarea {
   padding: 0.75rem;
-  border: 1px solid #ff9999;
+  border: 1px solid #ff999904;
   border-radius: 4px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
 
 .contact button {
-  background: #ff9999;
+  background: #000000;
   color: #fff;
   padding: 0.75rem;
-  font-family: 'Remachine Script', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   transition: transform 0.2s ease;
 }
@@ -446,7 +453,7 @@ ul {
   top: 10px;
   right: 20px;
   font-size: 2rem;
-  color: #ff9999;
+  color: #09efff;
   cursor: pointer;
   z-index: 1001;
 }
@@ -476,7 +483,7 @@ ul {
 }
 
 .fallback-content a:hover {
-  color: #ff9999;
+  color: #99e6ff;
 }
 
 @media (max-width: 768px) {
