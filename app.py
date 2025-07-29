@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
+import os
 
 app = Flask(__name__)
 
@@ -16,6 +17,10 @@ def contact():
     if name and email and message:
         return jsonify({'message': 'Message received'})
     return jsonify({'error': 'Invalid input'}), 400
+
+@app.route('/static/<path:filename>')
+def static_files(filename):
+    return send_from_directory(os.path.join(app.root_path, 'static'), filename)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
